@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import SvgSprite from 'vue-svg-sprite'
+import { store } from './store'
 
 Vue.use(SvgSprite, {
   url: 'src/assets/icons.svg',
@@ -14,5 +15,6 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   template: '<App/>',
+  store,
   components: { App }
 })
