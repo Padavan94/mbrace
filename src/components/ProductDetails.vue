@@ -39,6 +39,30 @@
                   <li class="product-details__set-item-param"><strong>Материал</strong> Серебро</li>
                   <li class="product-details__set-item-param"><strong>Материал</strong> Серебро</li>
                 </ul>
+                <div class="product-details__sharing">
+                  <div class="product-details__sharing-title">Поделится в соцсетях:</div>
+                  <social-sharing
+                                url="https://mbrace.space/"
+                                :title="product.name + ' - Mbrace' "
+                                :description="product.name + ' - ' + product.description"
+                                :quote="product.description"
+                                hashtags="Mbrace, Браслеты мужские, Купить браслет"
+                                twitter-user="mbrace.space"
+                                inline-template>
+                                     <div>
+                                         <network network="facebook">
+                                           <i class="fa fa-facebook"></i> Facebook
+                                         </network>
+
+                                         <network network="telegram">
+                                           <i class="fa fa-telegram"></i> Telegram
+                                         </network>
+                                         <network network="twitter">
+                                           <i class="fa fa-twitter"></i> Twitter
+                                         </network>
+                                     </div>
+                                   </social-sharing>
+                </div>
               </div>
               <div class="product-details__buttons">
                 <button class="button _wider" @click="addToCart(product)">В корзину!</button>
@@ -47,35 +71,6 @@
                 </transition>
               </div>
             </div>
-            <social-sharing
-              url="https://mbrace.space/"
-              :title="product.name + ' - Mbrace' "
-              :description="product.name + ' - ' + product.description"
-              :quote="product.description"
-              hashtags="Mbrace, Браслеты мужские, Купить браслет"
-              twitter-user="mbrace.space"
-              inline-template>
-                   <div>
-                       <network network="facebook">
-                         <i class="fa fa-facebook"></i> Facebook
-                       </network>
-                       <network network="skype">
-                         <i class="fa fa-skype"></i> Skype
-                       </network>
-                       <network network="sms">
-                         <i class="fa fa-commenting-o"></i> SMS
-                       </network>
-                       <network network="telegram">
-                         <i class="fa fa-telegram"></i> Telegram
-                       </network>
-                       <network network="twitter">
-                         <i class="fa fa-twitter"></i> Twitter
-                       </network>
-                       <network network="vk">
-                         <i class="fa fa-vk"></i> VKontakte
-                       </network>
-                   </div>
-                 </social-sharing>
            </div>
         </div>
       </div>
@@ -220,6 +215,21 @@ export default {
             margin-right: 15px;
           }
         }
+      }
+    }
+
+    &__sharing {
+      margin-bottom: 25px;
+
+      &-title {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      & /deep/ span {
+        margin: 0 5px;
       }
     }
   }

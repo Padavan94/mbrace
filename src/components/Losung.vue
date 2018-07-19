@@ -14,7 +14,7 @@
       </div>
       <div class="c-losung__coundown">
         <div class="c-losung__coundown-text">До конца акции осталось:</div>
-        <Countdown deadline="February 28, 2018"></Countdown>
+        <Countdown deadline="July 15, 2018"></Countdown>
         <div class="c-losung__form">
           <div class="c-losung__form-title">
             Оставьте заявку и успейте купить браслет

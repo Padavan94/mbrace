@@ -3,7 +3,9 @@
     <header-tape></header-tape>
     <losung></losung>
     <catalogue></catalogue>
-    <cart></cart>
+    <advantages></advantages>
+    <reviews></reviews>
+     <cart></cart>
     <toast position="se"></toast>
   </div>
 </template>
@@ -14,10 +16,13 @@ import HeaderTape from './HeaderTape'
 import Losung from './Losung'
 import Cart from './Cart'
 import Catalogue from './Catalogue'
+import Advantages from './Advantages'
+import Reviews from './Reviews'
+import { Carousel, Slide } from 'vue-carousel'
 import { Toast } from 'vuex-toast'
 
 export default {
-  components: {HeaderTape, Losung, Cart, Catalogue, Toast},
+  components: {HeaderTape, Losung, Cart, Catalogue, Carousel, Slide, Advantages, Reviews, Toast},
   name: 'MainComp'
 }
 </script>

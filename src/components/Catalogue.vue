@@ -5,7 +5,7 @@
       <div class="c-catalog__items">
         <Product
           v-for="product in products"
-          v-bind:key="product._id"
+          :key="product._id"
           :product="product"
         ></Product>
       </div>
